@@ -1,0 +1,12 @@
+# --- FOLDERS ---
+# IDE and virtual environment
+.idea/
+venv/
+
+# byte-code cached files
+__pycache__/
+
+# --- FILES ---
+# potentially large, temporary pickle objects
+*.pkl
+*.pt
