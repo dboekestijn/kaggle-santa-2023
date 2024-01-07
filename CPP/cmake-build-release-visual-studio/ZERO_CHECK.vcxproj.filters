@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\david\Projects\GitHub\Projects\Kaggle\kaggle-santa2023\CPP\cmake-build-release-visual-studio\CMakeFiles\6e8405a8d92b03f2f29a300a21694d53\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0A2D7E5E-B022-30A4-93AC-DF5087C6E302}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

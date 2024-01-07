@@ -8,10 +8,10 @@ public class Multinomial {
 
     public static int draw(final double[] probabilities) {
         final double r = random.nextDouble();
-        double cum_prod = 0d;
+        double cum_prob = 0d;
         int i = 0;
         for (; i < probabilities.length; i++)
-            if ((cum_prod += probabilities[i]) >= r)
+            if ((cum_prob += probabilities[i]) >= r)
                 return i;
         return i;
     }

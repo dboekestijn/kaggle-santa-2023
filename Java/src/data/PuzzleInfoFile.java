@@ -13,7 +13,7 @@ public class PuzzleInfoFile {
 
     public static final String csv_sep = ",(?=\\\")";
 
-    public static final int type_col = 0, moves_col = 1;
+    private static final int type_col = 0, moves_col = 1;
 
     private static final Pattern move_regex_pattern =
             Pattern.compile("'(\\w+)': \\[((?:\\d+(?:, )*)+)\\]", Pattern.MULTILINE);

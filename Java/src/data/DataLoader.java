@@ -1,5 +1,6 @@
 package data;
 
+import objects.Move;
 import objects.MoveSet;
 import objects.Puzzle;
 
@@ -14,7 +15,11 @@ import java.util.Map;
 
 public class DataLoader {
 
-    public static final Path data_dir = Path.of("").toAbsolutePath().getParent().resolve("data");
+    public static final Path parent_path = Path.of("").toAbsolutePath().getParent();
+
+    public static final Path data_dir = parent_path.resolve("data");
+
+    public static final Path submissions_path = parent_path.resolve("submissions");
 
     public static Puzzle loadPuzzle(int puzzleID) throws IOException {
         try (final BufferedReader reader = Files.newBufferedReader(PuzzlesFile.path)) {
@@ -97,6 +102,46 @@ public class DataLoader {
             }
 
             return type_moveSet;
+        }
+    }
+
+    public static List<Move> loadSampleSubmissionMoves(final int puzzleID, final MoveSet moveSet) throws IOException {
+        try (final BufferedReader reader = Files.newBufferedReader(SampleSubmissionFile.path)) {
+            String line = reader.readLine(); // skip header
+            String[] values;
+            int id;
+            while ((line = reader.readLine()) != null) {
+                values = line.split(SampleSubmissionFile.csv_sep);
+                id = SampleSubmissionFile.getID(values);
+                if (id != puzzleID)
+                    continue;
+
+                final List<Move> movesList = new ArrayList<>();
+                for (final String moveName : SampleSubmissionFile.getMoveNames(values))
+                    movesList.add(moveSet.getMove(moveName));
+                return movesList;
+            }
+        }
+
+        return null; // no puzzle with specified id
+    }
+
+    public static Map<Integer, List<Move>> loadSampleSubmissionMoves(final MoveSet moveSet) throws IOException {
+        try (final BufferedReader reader = Files.newBufferedReader(SampleSubmissionFile.path)) {
+            String line = reader.readLine(); // skip header
+            String[] values;
+            final Map<Integer, List<Move>> puzzleID_movesList = new HashMap<>();
+            List<Move> movesList;
+            while ((line = reader.readLine()) != null) {
+                values = line.split(SampleSubmissionFile.csv_sep);
+                movesList = new ArrayList<>();
+                for (final String moveName : SampleSubmissionFile.getMoveNames(values))
+                    movesList.add(moveSet.getMove(moveName));
+
+                puzzleID_movesList.put(SampleSubmissionFile.getID(values), movesList);
+            }
+
+            return puzzleID_movesList;
         }
     }
 

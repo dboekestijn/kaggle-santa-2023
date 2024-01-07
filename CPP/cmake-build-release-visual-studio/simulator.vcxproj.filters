@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\david\Projects\GitHub\Projects\Kaggle\kaggle-santa2023\CPP\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\david\Projects\GitHub\Projects\Kaggle\kaggle-santa2023\CPP\Simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\david\Projects\GitHub\Projects\Kaggle\kaggle-santa2023\CPP\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6C38F978-F65E-3E2F-9B3E-A56DBD661C55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

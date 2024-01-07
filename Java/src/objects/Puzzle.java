@@ -1,26 +1,28 @@
 package objects;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class Puzzle {
 
-    private final int id, nWildcards;
+    public final int id, nWildcards;
 
-    private final String type;
+    public final String type;
 
-    private final short[] initialState, currentState, solutionState;
+    public final State initialState, solutionState;
 
-    private final short[] tempState;
+    public State currentState;
 
-    private final int puzzleLen;
+    private int defaultLenShortestPath;
 
-    private static short[] initializeAsShortArray(final String[] state, final Map<String, Integer> symbol_number) {
-        final int n = symbol_number.size();
+    private static State initializeAsState(final String[] state, final Map<String, Integer> symbol_number) {
+        final int n = state.length;
         final short[] values = new short[n];
         for (int i = 0; i < n; i++)
             values[i] = symbol_number.get(state[i]).shortValue();
-        return values;
+        return new State(values);
     }
 
     public Puzzle(final int id,
@@ -39,50 +41,58 @@ public class Puzzle {
             symbol_number.put(symbol, number);
         }
 
-        this.initialState = initializeAsShortArray(initialState, symbol_number);
-        this.currentState = initializeAsShortArray(initialState, symbol_number);
-        this.solutionState = initializeAsShortArray(solutionState, symbol_number);
+        this.initialState = initializeAsState(initialState, symbol_number);
+        this.currentState = initializeAsState(initialState, symbol_number);
+        this.solutionState = initializeAsState(solutionState, symbol_number);
 
-        this.puzzleLen = this.initialState.length;
-        this.tempState = new short[puzzleLen];
+        defaultLenShortestPath = Integer.MAX_VALUE;
     }
 
-    public final int getID() {
-        return id;
+    public Puzzle(final int id,
+                  final String type,
+                  final State initialState,
+                  final State solutionState,
+                  final int nWildcards) {
+        this.id = id;
+        this.type = type;
+        this.initialState = initialState;
+        this.currentState = initialState.copy();
+        this.solutionState = solutionState;
+        this.nWildcards = nWildcards;
     }
 
-    public final String getType() {
-        return type;
+    public final int getDefaultLenShortestPath() {
+        return defaultLenShortestPath;
     }
 
-    public final short[] getInitialState() {
-        return initialState;
+    public final void setDefaultLenShortestPath(final int len) {
+        defaultLenShortestPath = len;
     }
 
-    public final short[] getCurrentState() {
-        return currentState;
+    public final void applyMove(final Move move) {
+        currentState = currentState.applyMove(move);
     }
 
-    public final short[] getSolutionState() {
-        return solutionState;
+    public final void applyMoves(final List<Move> moves) {
+        moves.forEach(this::applyMove);
     }
 
-    public final int getNumWildcards() {
-        return nWildcards;
+    public final boolean isSolved() {
+        return currentState.equalsUpTo(solutionState, nWildcards);
     }
 
-    public final void applyMove(final int[] move) {
-        int i;
-        for (i = 0; i < this.puzzleLen; i++)
-            this.tempState[i] = this.currentState[move[i]]; // save in temp
-        for (i = 0; i < this.puzzleLen; i++) {
-            this.currentState[i] = this.tempState[i]; // transfer
-            this.tempState[i] = 0; // reset
-        }
+    @Override
+    public final boolean equals(final Object o) {
+        if (this == o)
+            return true;
+        if (o == null || !getClass().equals(o.getClass()))
+            return false;
+        return id == ((Puzzle) o).id;
     }
 
-    public final void reset() {
-        System.arraycopy(this.initialState, 0, this.currentState, 0, this.puzzleLen);
+    @Override
+    public final int hashCode() {
+        return Objects.hash(id);
     }
 
 }
