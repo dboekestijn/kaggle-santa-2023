@@ -4,12 +4,13 @@ from torch import nn
 
 class PiNet(nn.Module):
 
-    def __init__(self, C: int, H: int, W: int, num_moves: int,
+    def __init__(self, C: int, H: int, W: int,
+                 num_moves: int, num_distances: int,
                  hidden_channels: int = 64,
                  num_resblocks: int = 10):
         """
         Initializes the PiZero network with C channels of height H and width W.
-        :param C: number of channels per facelet value
+        :param C: number of channels per input 'image'
         :param H: height of each input channel
         :param W: width of each input channel
         :param num_moves: number of moves over which to output a policy
@@ -20,33 +21,46 @@ class PiNet(nn.Module):
 
         super(PiNet, self).__init__()
 
-        self.resnet = nn.Sequential(
+        self.shared_embedder = nn.Sequential(
             ConvBlock(C, hidden_channels),
             *[ResBlock(hidden_channels, hidden_channels)
               for _ in range(num_resblocks)],
+            PolicyHead(hidden_channels, H, W, num_moves, hidden_channels),
+            # nn.LeakyReLU(inplace=True)
         )
 
-        self.policy_head = PolicyHead(hidden_channels, H, W, num_moves)
-        self.value_head = ValueHead(hidden_channels, H, W)
+        linear_input_features = num_moves
+        self.dist_net = nn.Sequential(
+            nn.Linear(linear_input_features, linear_input_features // 2),
+            # nn.LeakyReLU(inplace=True),
+            nn.Linear(linear_input_features // 2, 1),
+            nn.LeakyReLU(inplace=True)
+        )
 
-    def policy_forward(self, x: torch.Tensor) -> torch.Tensor:
-        return self.policy_head(self.resnet(x))
+        # self.policy_head = PolicyHead(hidden_channels, H, W, num_moves)
+        # self.value_head = ValueHead(hidden_channels, H, W, num_distances)
+        # self.value_head = PolicyHead(hidden_channels, H, W, num_distances)  # TODO: NB!
 
-    def forward(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
-        x = self.resnet(x)
-        policy_logits = self.policy_head(x)
-        value = self.value_head(x)
-        return policy_logits, value
+    def forward(self, x1: torch.Tensor, x2: torch.Tensor) -> torch.Tensor:
+        e1, e2 = self.shared_embedder(x1), self.shared_embedder(x2)
+        # dist_output = torch.sum(torch.abs(e1 - e2), dim=1)
+
+        dist_output = self.dist_net(torch.abs(e1 - e2))
+
+        return dist_output
 
 
 class ConvBlock(nn.Module):
 
-    def __init__(self, in_channels: int, out_channels: int):
+    def __init__(self, in_channels: int, out_channels: int,
+                 kernel_size: int = 3):
         super(ConvBlock, self).__init__()
 
         self.net = nn.Sequential(
             nn.Conv2d(in_channels, out_channels,
-                      kernel_size=3, padding=1, stride=1),
+                      kernel_size=kernel_size,
+                      padding=0 if kernel_size == 1 else 1,
+                      stride=1),
             nn.BatchNorm2d(out_channels),
             nn.ReLU(inplace=True)
         )
@@ -78,7 +92,7 @@ class ResBlock(nn.Module):
 
 class PolicyHead(nn.Module):
 
-    def __init__(self, C: int, H: int, W: int, num_moves: int,
+    def __init__(self, C: int, H: int, W: int, out_features: int,
                  out_channels: int = 2):
         """
         Initializes the policy head with C channels of height H and width W.
@@ -86,7 +100,7 @@ class PolicyHead(nn.Module):
         :param C: number of input channels
         :param H: height of each input channel
         :param W: width of each input channel
-        :param num_moves: number of moves over which to output a policy
+        :param out_features: number of moves over which to output a policy
         :param out_channels: number of output channels from the (first and
         only) convolutional layer
         """
@@ -96,11 +110,11 @@ class PolicyHead(nn.Module):
         self.conv_net = nn.Sequential(
             nn.Conv2d(C, out_channels, kernel_size=1),
             nn.BatchNorm2d(out_channels),
-            nn.ReLU(inplace=True),
+            # nn.ReLU(inplace=True),
         )
 
         linear_input_features = out_channels * H * W
-        self.linear_net = nn.Linear(linear_input_features, num_moves)
+        self.linear_net = nn.Linear(linear_input_features, out_features)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         x = self.conv_net(x)
@@ -110,7 +124,7 @@ class PolicyHead(nn.Module):
 
 class ValueHead(nn.Module):
 
-    def __init__(self, C: int, H: int, W: int,
+    def __init__(self, C: int, H: int, W: int, num_distances: int,
                  out_channels: int = 1,
                  hidden_features: int = 64):
         """
@@ -130,15 +144,15 @@ class ValueHead(nn.Module):
         self.conv_net = nn.Sequential(
             nn.Conv2d(C, out_channels, kernel_size=1),
             nn.BatchNorm2d(out_channels),
-            nn.ReLU(inplace=True),
+            # nn.ReLU(inplace=True),
         )
 
         linear_input_features = out_channels * H * W
         self.linear_net = nn.Sequential(
             nn.Linear(linear_input_features, hidden_features),
-            nn.ReLU(inplace=True),
             nn.Linear(hidden_features, 1),
-            nn.Sigmoid()
+            nn.LeakyReLU(inplace=True)
+            # nn.Sigmoid()
         )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:

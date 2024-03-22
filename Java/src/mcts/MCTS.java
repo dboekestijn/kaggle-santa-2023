@@ -1,6 +1,5 @@
 package mcts;
 
-import mcts.util.Multinomial;
 import mcts.util.Softmax;
 import objects.Move;
 import objects.MoveSet;
@@ -103,7 +102,7 @@ public class MCTS {
             exploredChildren = node.getChildren();
             probabilities = Softmax.probabilities(
                     exploredChildren.stream().mapToDouble(Node::getScore).toArray());
-            node = exploredChildren.get(Multinomial.draw(probabilities));
+            node = exploredChildren.get(mcts.util.Random.multinomial(probabilities));
         }
 
         return node;

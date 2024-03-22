@@ -1,10 +1,8 @@
 import data.DataLoader;
 import mcts.MCTS;
-import mcts.util.Multinomial;
 import objects.Move;
 import objects.MoveSet;
 import objects.Puzzle;
-import objects.State;
 
 import java.io.IOException;
 import java.util.*;

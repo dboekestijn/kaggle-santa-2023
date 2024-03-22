@@ -51,10 +51,6 @@ class State:
                     return False
         return True
 
-    def to_channeled_tensor(self, puzzle, device) -> torch.Tensor:
-        return (torch.Tensor(self.value == puzzle.solution_state.value)
-                .reshape(1, puzzle.C, puzzle.H, puzzle.W)).to(device)
-
     def copy(self):
         return State(self.value.copy())
 
@@ -90,38 +86,28 @@ class Puzzle:
                             sym_num: dict[str, int]) -> State:
         return State(np.array(tuple(sym_num[sym] for sym in state)))
 
-    @staticmethod
-    def get_tensor_dimensions(type: str) -> tuple[int, int, int]:
-        if type.startswith("cube"):
-            H = W = int(type[-1])
-            return 6, H, W
-        elif type.startswith("wreath"):
-            H = 1
-            W = 2 * int(type[-1]) - 2
-            return 2, H, W
-        else:  # type_.startswith("globe")
-            H = 1 + int(type[-3])
-            W = 2 * int(type[-1])
-            return 1, H, W
-
     def __init__(self, id: int, type: str,
                  initial_state: list[str], solution_state: list[str],
                  n_wildcards: int):
         self.id = id
         self.type = type
-        self.C, self.H, self.W = Puzzle.get_tensor_dimensions(type)
         self.n_wildcards = n_wildcards
 
-        sym_num: dict[str, int] = dict()
+        self.sym_num: dict[str, int] = dict()
         num = -1
         for sym in solution_state:
-            num = sym_num.get(sym, num + 1)
-            sym_num[sym] = num
+            num = self.sym_num.get(sym, num + 1)
+            self.sym_num[sym] = num
 
-        self.initial_state = Puzzle.initialize_as_state(initial_state, sym_num)
-        self.current_state = Puzzle.initialize_as_state(initial_state, sym_num)
+        self.initial_state = Puzzle.initialize_as_state(
+            initial_state, self.sym_num)
+        self.current_state = Puzzle.initialize_as_state(
+            initial_state, self.sym_num)
         self.solution_state = Puzzle.initialize_as_state(
-            solution_state, sym_num)
+            solution_state, self.sym_num)
+
+        self.C, self.H, self.W = \
+            np.unique(solution_state).size, len(solution_state), 1
 
         self.default_len_shortest_path = DEFAULT_LEN_SHORTEST_PATH
 

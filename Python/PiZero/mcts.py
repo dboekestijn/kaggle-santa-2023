@@ -7,7 +7,7 @@ import numpy as np
 from torch.nn import functional as F
 
 from PiZero import *
-from PiZero.pnn import PiNet
+from PiZero.pnn1d import PiNet
 from PiZero.simulator import Simulator
 from PiZero.training import CustomDataset
 

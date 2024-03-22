@@ -95,6 +95,10 @@ public class State {
         return true;
     }
 
+    public final int distance(final State other, final int nWildcards) {
+        return size - nMatchingFacelets(other, nWildcards);
+    }
+
     public final State copy() {
         return new State(Arrays.copyOf(this.value, this.value.length));
     }
