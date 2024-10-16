@@ -1,0 +1,5 @@
+# ninja log v5
+0	2553	7507888085339298	CMakeFiles/simulator.dir/main.cpp.obj	25b0bbae9b9c4773
+2	766	7507890117681936	CMakeFiles/simulator.dir/Simulator.cpp.obj	a885bce36538b15
+766	2473	7507890134743500	simulator.cp313-win_amd64.pyd	71edc705967b624e
+766	2473	7507890134743500	libsimulator.dll.a	71edc705967b624e

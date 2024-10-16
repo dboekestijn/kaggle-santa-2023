@@ -1,6 +1,7 @@
 #include "Simulator.h"
 
 #include <algorithm>
+#include <list>
 #include <unordered_set>
 #include <thread>
 
