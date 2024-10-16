@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP
+# Install script for directory: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

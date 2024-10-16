@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio"
+			"value" : "c:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP"
+			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1027,7 +1027,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio"
+			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio"
 		},
 		{
 			"name" : "CPP_IS_TOP_LEVEL",
@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP"
+			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PYTHON",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Python311/python.exe3.11.7"
+			"value" : "C:/Users/david/AppData/Local/Programs/Python/Python311/python.exe3.11.8"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp",
@@ -1075,7 +1075,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/Program Files/Python311/python.exe][v3.11.7(3.6)]"
+			"value" : "[C:/Users/david/AppData/Local/Programs/Python/Python311/python.exe][v3.11.8(3.6)]"
 		},
 		{
 			"name" : "HAS_MSVC_GL_LTCG",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Python311/python.exe"
+			"value" : "C:/Users/david/AppData/Local/Programs/Python/Python311/python.exe"
 		},
 		{
 			"name" : "PYTHON_INCLUDE_DIRS",
@@ -1139,7 +1139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Python311/Include"
+			"value" : "C:/Users/david/AppData/Local/Programs/Python/Python311/Include"
 		},
 		{
 			"name" : "PYTHON_IS_DEBUG",
@@ -1163,7 +1163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Python311/libs/python311.lib"
+			"value" : "C:/Users/david/AppData/Local/Programs/Python/Python311/libs/python311.lib"
 		},
 		{
 			"name" : "PYTHON_MODULE_EXTENSION",
@@ -1199,7 +1199,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3.11.7"
+			"value" : "3.11.8"
 		},
 		{
 			"name" : "PYTHON_VERSION_MAJOR",
@@ -1259,7 +1259,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/pybind11/include;C:/Program Files/Python311/Include"
+			"value" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/pybind11/include;C:/Users/david/AppData/Local/Programs/Python/Python311/Include"
 		}
 	],
 	"kind" : "cache",

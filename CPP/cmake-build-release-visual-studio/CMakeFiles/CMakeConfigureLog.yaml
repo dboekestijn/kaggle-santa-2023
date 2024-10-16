@@ -7,7 +7,7 @@ events:
       - "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Windows - 10.0.22621 - AMD64
+      The system is: Windows - 10.0.22631 - AMD64
   -
     kind: "message-v1"
     backtrace:
@@ -24,9 +24,9 @@ events:
       The output was:
       0
       MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-      Build started 6-1-2024 01:20:09.
+      Build started 16-10-2024 14:14:20.
       
-      Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -39,7 +39,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -47,13 +47,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.28
+      Time Elapsed 00:00:01.12
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -61,7 +61,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CompilerIdC.exe
+        C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/3.26.4/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -79,9 +79,9 @@ events:
       The output was:
       0
       MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-      Build started 6-1-2024 01:20:09.
+      Build started 16-10-2024 14:14:22.
       
-      Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -94,7 +94,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -102,13 +102,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.28
+      Time Elapsed 00:00:00.59
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -116,7 +116,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hhnth0"
-      binary: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hhnth0"
+      source: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ajcpuw"
+      binary: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ajcpuw"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -137,39 +137,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hhnth0
+        Change Dir: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ajcpuw
         
-        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_47b4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 6-1-2024 01:20:10.
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d80e9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 16-10-2024 14:14:23.
         
-        Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-hhnth0\\cmTC_47b4b.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ajcpuw\\cmTC_d80e9.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_47b4b.dir\\Debug\\".
+          Creating directory "cmTC_d80e9.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-hhnth0\\Debug\\".
-          Creating directory "cmTC_47b4b.dir\\Debug\\cmTC_47b4b.tlog\\".
+          Creating directory "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ajcpuw\\Debug\\".
+          Creating directory "cmTC_d80e9.dir\\Debug\\cmTC_d80e9.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_47b4b.dir\\Debug\\cmTC_47b4b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_47b4b.dir\\Debug\\cmTC_47b4b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d80e9.dir\\Debug\\cmTC_d80e9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d80e9.dir\\Debug\\cmTC_d80e9.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47b4b.dir\\Debug\\\\" /Fd"cmTC_47b4b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d80e9.dir\\Debug\\\\" /Fd"cmTC_d80e9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_47b4b.dir\\Debug\\\\" /Fd"cmTC_47b4b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d80e9.dir\\Debug\\\\" /Fd"cmTC_d80e9.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-hhnth0\\Debug\\cmTC_47b4b.exe" /INCREMENTAL /ILK:"cmTC_47b4b.dir\\Debug\\cmTC_47b4b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hhnth0/Debug/cmTC_47b4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-hhnth0/Debug/cmTC_47b4b.lib" /MACHINE:X64  /machine:x64 cmTC_47b4b.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_47b4b.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-hhnth0\\Debug\\cmTC_47b4b.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ajcpuw\\Debug\\cmTC_d80e9.exe" /INCREMENTAL /ILK:"cmTC_d80e9.dir\\Debug\\cmTC_d80e9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ajcpuw/Debug/cmTC_d80e9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-ajcpuw/Debug/cmTC_d80e9.lib" /MACHINE:X64  /machine:x64 cmTC_d80e9.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_d80e9.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ajcpuw\\Debug\\cmTC_d80e9.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_47b4b.dir\\Debug\\cmTC_47b4b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_47b4b.dir\\Debug\\cmTC_47b4b.tlog\\cmTC_47b4b.lastbuildstate".
-        Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-hhnth0\\cmTC_47b4b.vcxproj" (default targets).
+          Deleting file "cmTC_d80e9.dir\\Debug\\cmTC_d80e9.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d80e9.dir\\Debug\\cmTC_d80e9.tlog\\cmTC_d80e9.lastbuildstate".
+        Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-ajcpuw\\cmTC_d80e9.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.27
+        Time Elapsed 00:00:00.59
         
       exitCode: 0
   -
@@ -181,8 +181,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zu222w"
-      binary: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zu222w"
+      source: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-eu2a9c"
+      binary: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-eu2a9c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -191,39 +191,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zu222w
+        Change Dir: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-eu2a9c
         
-        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_75e03.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 6-1-2024 01:20:10.
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_38ba5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 16-10-2024 14:14:24.
         
-        Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zu222w\\cmTC_75e03.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-eu2a9c\\cmTC_38ba5.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_75e03.dir\\Debug\\".
+          Creating directory "cmTC_38ba5.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zu222w\\Debug\\".
-          Creating directory "cmTC_75e03.dir\\Debug\\cmTC_75e03.tlog\\".
+          Creating directory "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-eu2a9c\\Debug\\".
+          Creating directory "cmTC_38ba5.dir\\Debug\\cmTC_38ba5.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_75e03.dir\\Debug\\cmTC_75e03.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_75e03.dir\\Debug\\cmTC_75e03.tlog\\unsuccessfulbuild".
+          Creating "cmTC_38ba5.dir\\Debug\\cmTC_38ba5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_38ba5.dir\\Debug\\cmTC_38ba5.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_75e03.dir\\Debug\\\\" /Fd"cmTC_75e03.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38ba5.dir\\Debug\\\\" /Fd"cmTC_38ba5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_75e03.dir\\Debug\\\\" /Fd"cmTC_75e03.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38ba5.dir\\Debug\\\\" /Fd"cmTC_38ba5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\JetBrains\\CLion 2023.2.1\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zu222w\\Debug\\cmTC_75e03.exe" /INCREMENTAL /ILK:"cmTC_75e03.dir\\Debug\\cmTC_75e03.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zu222w/Debug/cmTC_75e03.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-zu222w/Debug/cmTC_75e03.lib" /MACHINE:X64  /machine:x64 cmTC_75e03.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_75e03.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zu222w\\Debug\\cmTC_75e03.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-eu2a9c\\Debug\\cmTC_38ba5.exe" /INCREMENTAL /ILK:"cmTC_38ba5.dir\\Debug\\cmTC_38ba5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-eu2a9c/Debug/cmTC_38ba5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-eu2a9c/Debug/cmTC_38ba5.lib" /MACHINE:X64  /machine:x64 cmTC_38ba5.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_38ba5.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-eu2a9c\\Debug\\cmTC_38ba5.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_75e03.dir\\Debug\\cmTC_75e03.tlog\\unsuccessfulbuild".
-          Touching "cmTC_75e03.dir\\Debug\\cmTC_75e03.tlog\\cmTC_75e03.lastbuildstate".
-        Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-zu222w\\cmTC_75e03.vcxproj" (default targets).
+          Deleting file "cmTC_38ba5.dir\\Debug\\cmTC_38ba5.tlog\\unsuccessfulbuild".
+          Touching "cmTC_38ba5.dir\\Debug\\cmTC_38ba5.tlog\\cmTC_38ba5.lastbuildstate".
+        Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-eu2a9c\\cmTC_38ba5.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.28
+        Time Elapsed 00:00:00.45
         
       exitCode: 0
   -
@@ -240,8 +240,8 @@ events:
     checks:
       - "Performing Test HAS_MSVC_GL_LTCG"
     directories:
-      source: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wjfgbj"
-      binary: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wjfgbj"
+      source: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kl7q9q"
+      binary: "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kl7q9q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -251,47 +251,47 @@ events:
       variable: "HAS_MSVC_GL_LTCG"
       cached: true
       stdout: |
-        Change Dir: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wjfgbj
+        Change Dir: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kl7q9q
         
-        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b7003.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.8.3+195e7f5a3 for .NET Framework
-        Build started 6-1-2024 01:20:11.
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_473b1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 16-10-2024 14:14:24.
         
-        Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\cmTC_b7003.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\cmTC_473b1.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_b7003.dir\\Debug\\".
+          Creating directory "cmTC_473b1.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\Debug\\".
-          Creating directory "cmTC_b7003.dir\\Debug\\cmTC_b7003.tlog\\".
+          Creating directory "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\Debug\\".
+          Creating directory "cmTC_473b1.dir\\Debug\\cmTC_473b1.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_b7003.dir\\Debug\\cmTC_b7003.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_b7003.dir\\Debug\\cmTC_b7003.tlog\\unsuccessfulbuild".
+          Creating "cmTC_473b1.dir\\Debug\\cmTC_473b1.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_473b1.dir\\Debug\\cmTC_473b1.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_b7003.dir\\Debug\\\\" /Fd"cmTC_b7003.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_473b1.dir\\Debug\\\\" /Fd"cmTC_473b1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_b7003.dir\\Debug\\\\" /Fd"cmTC_b7003.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_473b1.dir\\Debug\\\\" /Fd"cmTC_473b1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\Debug\\cmTC_b7003.exe" /INCREMENTAL /ILK:"cmTC_b7003.dir\\Debug\\cmTC_b7003.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wjfgbj/Debug/cmTC_b7003.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-wjfgbj/Debug/cmTC_b7003.lib" /MACHINE:X64  /machine:x64 cmTC_b7003.dir\\Debug\\src.obj
-        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\cmTC_b7003.vcxproj]
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\Debug\\cmTC_473b1.exe" /INCREMENTAL /ILK:"cmTC_473b1.dir\\Debug\\cmTC_473b1.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kl7q9q/Debug/cmTC_473b1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-release-visual-studio/CMakeFiles/CMakeScratch/TryCompile-kl7q9q/Debug/cmTC_473b1.lib" /MACHINE:X64  /machine:x64 cmTC_473b1.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\cmTC_473b1.vcxproj]
           Generating code
           Finished generating code
-          cmTC_b7003.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\Debug\\cmTC_b7003.exe
+          cmTC_473b1.vcxproj -> C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\Debug\\cmTC_473b1.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_b7003.dir\\Debug\\cmTC_b7003.tlog\\unsuccessfulbuild".
-          Touching "cmTC_b7003.dir\\Debug\\cmTC_b7003.tlog\\cmTC_b7003.lastbuildstate".
-        Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\cmTC_b7003.vcxproj" (default targets).
+          Deleting file "cmTC_473b1.dir\\Debug\\cmTC_473b1.tlog\\unsuccessfulbuild".
+          Touching "cmTC_473b1.dir\\Debug\\cmTC_473b1.tlog\\cmTC_473b1.lastbuildstate".
+        Done Building Project "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\cmTC_473b1.vcxproj" (default targets).
         
         Build succeeded.
         
-        "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\cmTC_b7003.vcxproj" (default target) (1) ->
+        "C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\cmTC_473b1.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-wjfgbj\\cmTC_b7003.vcxproj]
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\david\\Projects\\GitHub\\Projects\\Kaggle\\kaggle-santa-2023\\CPP\\cmake-build-release-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-kl7q9q\\cmTC_473b1.vcxproj]
         
             1 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.29
+        Time Elapsed 00:00:00.33
         
       exitCode: 0
 ...

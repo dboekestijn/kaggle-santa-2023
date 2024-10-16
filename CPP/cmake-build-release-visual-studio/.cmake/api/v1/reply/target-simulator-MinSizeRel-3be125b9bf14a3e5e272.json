@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/simulator.cp311-win_amd64.pyd"
+			"path" : "MinSizeRel/simulator.cp311-win_amd64.pyd"
 		},
 		{
-			"path" : "Debug/simulator.lib"
+			"path" : "MinSizeRel/simulator.lib"
 		},
 		{
-			"path" : "Debug/simulator.pdb"
+			"path" : "MinSizeRel/simulator.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -47,6 +47,12 @@
 				"parent" : 1
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 1
+			},
+			{
 				"command" : 4,
 				"file" : 1,
 				"line" : 7,
@@ -54,33 +60,33 @@
 			},
 			{
 				"file" : 3,
-				"parent" : 3
+				"parent" : 4
 			},
 			{
 				"command" : 3,
 				"file" : 3,
 				"line" : 250,
-				"parent" : 4
+				"parent" : 5
 			},
 			{
 				"file" : 2,
-				"parent" : 5
+				"parent" : 6
 			},
 			{
 				"command" : 3,
 				"file" : 2,
 				"line" : 188,
-				"parent" : 6
+				"parent" : 7
 			},
 			{
 				"file" : 0,
-				"parent" : 7
+				"parent" : 8
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 138,
-				"parent" : 8
+				"parent" : 9
 			},
 			{
 				"command" : 2,
@@ -102,11 +108,19 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 3,
+					"fragment" : "/GL"
+				},
+				{
+					"backtrace" : 11,
 					"fragment" : "/bigobj"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "/MP"
 				}
 			],
 			"defines" : 
@@ -118,14 +132,14 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"isSystem" : true,
-					"path" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa2023/CPP/pybind11/include"
+					"path" : "C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/pybind11/include"
 				},
 				{
-					"backtrace" : 11,
+					"backtrace" : 12,
 					"isSystem" : true,
-					"path" : "C:/Program Files/Python311/Include"
+					"path" : "C:/Users/david/AppData/Local/Programs/Python/Python311/Include"
 				}
 			],
 			"language" : "CXX",
@@ -133,9 +147,9 @@
 			{
 				"backtraces" : 
 				[
-					11,
-					11,
-					11
+					12,
+					12,
+					12
 				],
 				"standard" : "17"
 			},
@@ -158,12 +172,17 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"fragment" : "/machine:x64 /INCREMENTAL:NO",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 9,
-				"fragment" : "\"C:\\Program Files\\Python311\\libs\\python311.lib\"",
+				"backtrace" : 3,
+				"fragment" : "-LTCG",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "C:\\Users\\david\\AppData\\Local\\Programs\\Python\\Python311\\libs\\python311.lib",
 				"role" : "libraries"
 			},
 			{
