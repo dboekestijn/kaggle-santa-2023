@@ -1,5 +1,0 @@
-# ninja log v5
-0	812	7507891062481089	CMakeFiles/simulator.dir/Simulator.cpp.obj	5d2d3ad5e700efca
-2	3042	7507891084771094	CMakeFiles/simulator.dir/main.cpp.obj	3b9c0ecbf1f23efd
-3043	3133	7507891085689211	simulator.cp313-win_amd64.pyd	c61c85e0743abfc3
-3043	3133	7507891085689211	libsimulator.dll.a	c61c85e0743abfc3

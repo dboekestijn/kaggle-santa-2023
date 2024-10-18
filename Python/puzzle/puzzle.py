@@ -51,6 +51,13 @@ class State:
                     return False
         return True
 
+    def to_channeled_tensor(self, puzzle, device):
+        tensor = torch.atleast_2d(torch.Tensor(self.value))
+        tensor_idcs = torch.atleast_2d(torch.arange(0, puzzle.C))
+        channeled_tensor = (tensor_idcs.T == tensor).float()[torch.newaxis, :, :]
+
+        return channeled_tensor.to(device)
+
     def copy(self):
         return State(self.value.copy())
 

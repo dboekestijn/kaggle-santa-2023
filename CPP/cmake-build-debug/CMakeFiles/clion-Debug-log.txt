@@ -1,7 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\david\Projects\GitHub\Projects\Kaggle\kaggle-santa-2023\CPP -B C:\Users\david\Projects\GitHub\Projects\Kaggle\kaggle-santa-2023\CPP\cmake-build-debug
--- pybind11::lto disabled (problems with undefined symbols for MinGW for now)
--- pybind11::thin_lto disabled (problems with undefined symbols for MinGW for now)
--- Found pybind11: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/pybind11/include (found version "2.11.1")
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/david/Projects/GitHub/Projects/Kaggle/kaggle-santa-2023/CPP/cmake-build-debug

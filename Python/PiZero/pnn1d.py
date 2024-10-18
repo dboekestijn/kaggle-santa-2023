@@ -5,7 +5,7 @@ from torch import nn
 class PiNet(nn.Module):
 
     def __init__(self, C: int, H: int, W: int,
-                 num_moves: int, num_distances: int,
+                 num_moves: int, num_distances: int = None,
                  hidden_channels: int = 64,
                  num_resblocks: int = 10):
         """
